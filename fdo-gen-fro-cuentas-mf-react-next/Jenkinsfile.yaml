@@ -1,0 +1,7 @@
+sonarArgs: "-Dsonar.projectKey=fdo-gen-fro-cuentas-mf-react-next -Dsonar.sources=."
+pathKubernetes: "k8s/fdo-gen-fro-cuentas-mf-react-next-deployment.yaml"
+project: "ns-front-fdo-gen-cuentas"
+artifactName: "fdo-gen-fro-cuentas-mf-react-next"
+replicasDev: 1
+replicasPrd: 1
+

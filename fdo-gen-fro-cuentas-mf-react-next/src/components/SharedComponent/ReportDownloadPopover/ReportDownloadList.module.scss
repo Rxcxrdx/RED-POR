@@ -1,0 +1,53 @@
+.reportButton {
+  background-color: #ffff;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid #3e6c33;
+  transition: background-color 0.3s ease;
+}
+
+.reportButton:hover {
+  background-color: #c3d1c0;
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 12px;
+}
+
+.reportsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.modalContent {
+  padding: 24px;
+}
+
+.pdfLinkContainer {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.manualOpenButton {
+  margin-top: 8px;
+}
+
+.icon_green {
+  [class*="tvr-comp-styled-svg-icon"] {
+    fill: #3e6c33 !important;
+  }
+}

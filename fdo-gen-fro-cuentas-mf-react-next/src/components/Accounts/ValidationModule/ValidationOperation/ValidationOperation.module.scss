@@ -1,0 +1,30 @@
+.validationOperationContainer {
+  background-color: white;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 10px;
+  margin: 0.375rem 0;
+  align-items: flex-end;
+}
+
+.filterFormContainer {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.associateValidation__filterFormContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.associateValidation__filterFormContainer button {
+  margin-bottom: 0.375rem;
+}
+
+.tableInfo td p {
+  white-space: break-spaces !important;
+}

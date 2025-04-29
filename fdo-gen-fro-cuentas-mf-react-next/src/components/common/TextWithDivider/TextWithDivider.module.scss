@@ -1,0 +1,22 @@
+.TextWithDividerContainer {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.TextWithDividerContainer__text {
+  font-family: "Banda Semi bold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+
+  width: max-content;
+}
+
+.TextWithDividerContainer__divider {
+  height: 0.5px;
+  background: var(--Dividers-Background-Divider-Color, #d1d3d8);
+  width: stretch;
+  margin-left: 10px;
+}

@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fdo-gen-fro-cuentas-mf-react-next-deployment
+  namespace: ns-front-fdo-gen-cuentas # Ajusta el namespace si es necesario
+  labels:
+    app: fdo-gen-fro-cuentas-mf-react-next-deployment
+    domain: serviciosqa.afpporvenir.com # Reemplaza con tu dominio si aplica
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: fdo-gen-fro-cuentas-mf-react-next-deployment
+  template:
+    metadata:
+      labels:
+        app: fdo-gen-fro-cuentas-mf-react-next-deployment
+        domain: serviciosqa.afpporvenir.com # Reemplaza con tu dominio si aplica
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+
+        - name: fdo-gen-fro-cuentas-mf-react-next-deployment
+          image: azeupvprddvoacr01.azurecr.io/NAME_ARTIFACT:VERSION
+          resources:
+            requests:
+              cpu: 100m
+              memory: 300Mi
+            limits:
+              cpu: 200m
+              memory: 300Mi
+          ports:
+            - containerPort: 8080
+          env:
+            - name: APPVER
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-fdogen-configmap # Reemplaza con el nombre de tu ConfigMap
+                  key: appver
+            - name: VERDATE
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-fdogen-configmap
+                  key: verdate
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-fdogen-configmap
+                  key: node-env
+            - name: PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-fdogen-configmap
+                  key: port
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: fdo-gen-fro-cuentas-mf-react-next-services
+  namespace: ns-front-fdo-gen-cuentas # Ajusta el namespace si es necesario
+spec:
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: fdo-gen-fro-cuentas-mf-react-next-deployment
+
+---
+
+#hpa
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: fdo-gen-fro-cuentas-mf-react-next
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: fdo-gen-fro-cuentas-mf-react-next-deployment
+  minReplicas: 1 # Mínimo de réplicas
+  maxReplicas: 5 # Máximo de réplicas

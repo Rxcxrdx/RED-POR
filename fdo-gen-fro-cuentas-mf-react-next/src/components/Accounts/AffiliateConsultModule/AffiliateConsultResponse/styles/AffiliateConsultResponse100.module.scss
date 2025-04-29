@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 28px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.accountContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #bbbec5;
+  border-radius: 12px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.accountHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.accountInfo {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.balanceGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.balanceBox {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-left: 1px solid #1b5e21;
+  padding-left: 32px;
+}
+
+.balanceBoxHighlighted {
+  composes: balanceBox;
+  border-left: 1px solid #1b5e21;
+}
+
+.balanceHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.balanceLabel {
+  color: #4c515b !important;
+  font-weight: 400;
+}
+
+.accountNumber {
+  color: #38622e !important;
+}
+
+.balanceAmount {
+  color: #4c515b !important;
+}
+
+.balanceAmountHighlighted {
+  color: #1b5e21 !important;
+}

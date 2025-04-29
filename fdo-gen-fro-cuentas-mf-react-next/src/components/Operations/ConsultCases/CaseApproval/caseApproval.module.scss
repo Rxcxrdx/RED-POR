@@ -1,0 +1,16 @@
+.caseApprovalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__filterButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+}
+
+.sectionInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}

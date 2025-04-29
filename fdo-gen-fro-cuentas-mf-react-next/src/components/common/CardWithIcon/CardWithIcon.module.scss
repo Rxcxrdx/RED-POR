@@ -1,0 +1,47 @@
+.CardWithIconContainer {
+  display: flex;
+  width: 370px;
+  min-width: fit-content;
+  height: 88px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding-top: 16px;
+  padding-right: 22px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  background: var(--Background-space-color-white-300, #ffffff);
+  box-shadow: 2px 2px 4px 0px #00000014, -2px -2px 0px 0px #0000000a;
+}
+
+.CardWithIconContainer__label {
+  font-family: "Banda Semi bold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--Text-Secondary-Text-Color, #4c515b);
+}
+
+.CardWithIconContainer__value {
+  font-family: "Banda Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: var(--Text-Black, #000000);
+}
+
+.iconContainer {
+  width: 56px;
+  height: 56px;
+  background: var(--Brand-global-color-brand-primary-50, #ecf0eb);
+  border-radius: 100%;
+  padding: 7px;
+}
+
+.iconContainer__icon {
+  filter: invert(36%) sepia(14%) saturate(1608%) hue-rotate(63deg)
+    brightness(96%) contrast(89%);
+  color: var(--Brand-global-color-brand-primary-500, #3e6c33);
+}

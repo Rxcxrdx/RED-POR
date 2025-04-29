@@ -1,0 +1,36 @@
+.BoxMessage {
+  width: 100%;
+  min-height: 120px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid var(--Border-Border-Color, #bbbec5);
+  border: 1px solid var(--tvr-secondary-300);
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.BoxMessage__icon {
+  filter: invert(45%) sepia(27%) saturate(212%) hue-rotate(182deg)
+    brightness(92%) contrast(88%);
+}
+
+.BoxMessage__title {
+  font-family: "Banda Semi bold";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: var(--Alerts-White-Secondary-Text-Color, #6b7280);
+}
+
+.BoxMessage__message {
+  font-family: "Banda Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #000;
+}

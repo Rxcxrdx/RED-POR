@@ -1,0 +1,33 @@
+.flatTableWrapper {
+  width: 100%;
+}
+
+.flatTableHeader {
+}
+
+.headerText {
+  color: #6b7280;
+}
+
+.flatTableRow {
+}
+
+.flatTableCell {
+}
+
+.bottomRounded {
+  :global(.tvr-comp-table-container) {
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+  }
+
+  .lastRow {
+    .firstCell {
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    .lastCell {
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+}

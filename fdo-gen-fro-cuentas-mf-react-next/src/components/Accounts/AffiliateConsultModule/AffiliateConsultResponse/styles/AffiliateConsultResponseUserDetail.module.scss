@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 28px;
+  padding: 16px;
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-left: 8px;
+}
+
+.infoItem {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  color: #000000;
+  font-weight: 700;
+}

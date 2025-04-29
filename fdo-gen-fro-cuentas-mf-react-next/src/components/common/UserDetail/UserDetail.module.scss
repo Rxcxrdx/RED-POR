@@ -1,0 +1,67 @@
+.nameContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.userInformation {
+  font-size: 20px;
+  letter-spacing: 0%;
+}
+.userInformation__username {
+  font-family: Banda Bold;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.userInformation__id {
+  font-family: Banda Regular;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.savingsGradient {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 234.5004425048828px;
+  height: 70.96932983398438px;
+  padding: 8px 16px;
+  gap: 18px;
+  border-radius: 12px;
+  background: linear-gradient(90.01deg, #305b2c 0%, #9ca739 100%);
+  box-shadow: 2px 2px 4px 0px #00000014;
+  box-shadow: -2px -2px 0px 0px #0000000a;
+}
+
+.savingsGradient__label {
+  color: white;
+  font-family: "Banda Bold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.savingsGradient__balance {
+  color: white;
+  font-family: "Banda Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.savingsGradient img {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(60deg)
+    brightness(150%) contrast(100%);
+  width: 54.50044250488281px;
+  height: 54.96933364868164px;
+}
+
+.additionalInfoContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}

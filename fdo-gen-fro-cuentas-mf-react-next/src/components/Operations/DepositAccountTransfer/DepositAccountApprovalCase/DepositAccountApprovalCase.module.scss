@@ -1,0 +1,40 @@
+.sectionContainer {
+  border: 1px solid var(--tvr-primary-500);
+  border-radius: 15px;
+  padding: 25px 20px;
+  margin: 20px 0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sectionContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destinyAccountContainer,
+.depositDataContainer,
+.caseDataContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 15px;
+  margin: 10px 0;
+  &__checkbox {
+    text-align: end;
+    height: 100%;
+  }
+}
+
+.depositDataContainer,
+.caseDataContainer {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

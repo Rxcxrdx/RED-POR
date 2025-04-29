@@ -1,0 +1,17 @@
+.btnDownload{
+    background-color: #87a62e;
+    display: flex;
+    align-items: center;
+    justify-content: var(--button-justify, center);
+    overflow: visible;
+    transition: transform 150ms ease, opacity 100ms ease;
+    height: var(--button-height-xs);
+    color: #fff;
+    padding: 4px 12px;
+    font-family: "banda regular";
+    border-radius: var(--button-radius, 4px); // Añadir border-radius
+    &:hover {
+        background-color: rgba(122, 149, 41, 1);
+        // transform: scale(1.05); // Efecto de escala al hacer hover
+    }
+}

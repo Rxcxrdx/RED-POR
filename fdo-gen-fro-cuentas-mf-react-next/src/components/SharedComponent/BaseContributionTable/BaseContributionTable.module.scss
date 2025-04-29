@@ -1,0 +1,10 @@
+.disabledRow {
+  opacity: 0.6;
+  pointer-events: none;
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}

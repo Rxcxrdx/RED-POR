@@ -1,0 +1,59 @@
+import React from "react";
+import { render } from "@testing-library/react";
+import { ValidityView } from "../ValidityView";
+
+const defaultProps = {
+  validityData: [
+    {
+      afiliadoFondoID: "11",
+      cuentaId: "213",
+      fondoId: "1",
+      secuencia: "1",
+      fechaSolicitudEntrada: "1994-04-04",
+      fechaEfectividadEntrada: "1994-05-01",
+      tipoVinculacionId: "ELECCION ACCAI",
+      codigoEntidadOrigen: "2323",
+      fechaSolicitudSalida: "null",
+      fechaEfectividadSalida: "null",
+      codigoEntidadSalida: null,
+      fechaPago: "null",
+      fechaDesistimiento: "null",
+      radicado: null,
+      folioAfiliacion: "1",
+      folioSalida: "null",
+      tipoIdentificacionId: "CC",
+      numeroIdentificacion: "52168409",
+      estadoAfiliadoFondoId: "VIGENTE",
+      subestadoAfiliadoFondoId: "INICIAL ACCAI",
+      problemasRegistraduria: "null",
+      indicadorEmbargo: "null",
+      validezVigencia: "VALIDA",
+      estadoReconstruccion: "SIN_RECONSTRUIR_SIAF",
+      fuenteActualizacion: "CREACION_CUENTA",
+      fechaEfePriIngRai: "1994-05-01",
+      fechaEfeUltIngRai: "1994-05-01",
+      fechaSolPriIngRai: "1994-04-04",
+      fechaSolUltIngRai: "1994-04-04",
+      codigoAdministradora: "null",
+      vigenciaCertificada: null,
+      fechaCertificacion: "null",
+      usuarioCreacion: "MIGRACION",
+      fechaCreacion: "2024-11-15",
+      usuarioUltimaModificacion: null,
+      fechaUltimaModificacion: "null",
+    },
+  ],
+};
+
+const renderComponent = (props = {}) =>
+  render(<ValidityView {...defaultProps} {...props} />);
+
+describe("ValidityView Component", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  test("Render component correctly", () => {
+    expect(renderComponent());
+  });
+});

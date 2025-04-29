@@ -1,0 +1,30 @@
+.validationInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.modalValidation {
+  padding: 30px;
+
+  .validationInfoContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+}
+
+.tabNavigation {
+  border-bottom: 0.125rem solid var(--tvr-gray-100);
+  width: 100%;
+}
+
+.validationView__title {
+  margin-bottom: 16px;
+  font-family: "Banda Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}

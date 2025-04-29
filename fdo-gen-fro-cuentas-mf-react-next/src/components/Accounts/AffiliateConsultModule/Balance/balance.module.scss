@@ -1,0 +1,19 @@
+.balanceContainer {
+  border: 1px solid #bbbec5;
+  border-radius: 12px;
+  gap: 16px;
+  padding: 16px 24px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 16px;
+}
+
+.dispersionInfoContainer {
+  display: flex;
+  gap: 32px;
+}

@@ -1,0 +1,68 @@
+export const mockGetBalanceResponse = {
+  status: { statusCode: 200, statusDescription: "Transaccion Exitosa" },
+  data: {
+    saldos: [
+      {
+        saldoPortafolioId: "706337",
+        cuentaId: "92770",
+        fondoId: "1",
+        inversionId: "1",
+        obligatorio: "0",
+        voluntarioAfiliado: "0",
+        voluntarioEmpleador: null,
+        retencionContingente: "0",
+        fechaCreacion: "2025-01-23",
+        usuarioCreacion: "dsetldatastage",
+        fechaModificacion: "2020-02-20",
+        usuarioModificacion: "OPS$CTMAG90",
+        nombreInversion: "Fondo Generacional 1",
+        pesosObligatorio: null,
+        pesosVoluntarioAfiliado: null,
+        pesosVoluntarioEmpleador: null,
+      },
+      {
+        saldoPortafolioId: "706338",
+        cuentaId: "92770",
+        fondoId: "1",
+        inversionId: "2",
+        obligatorio: "273.97059699",
+        voluntarioAfiliado: "0",
+        voluntarioEmpleador: null,
+        retencionContingente: "0",
+        fechaCreacion: "2025-01-23",
+        usuarioCreacion: "dsetldatastage",
+        fechaModificacion: "2024-09-20",
+        usuarioModificacion: "COMISIONES",
+        nombreInversion: "Fondo Generacional 2",
+        pesosObligatorio: null,
+        pesosVoluntarioAfiliado: null,
+        pesosVoluntarioEmpleador: null,
+      },
+    ],
+  },
+};
+
+export const mockGetDispersion = {
+  status: { statusCode: 200, statusDescription: "Transaccion Exitosa" },
+  data: {
+    dispersiones: [
+      {
+        plantillaDispersionId: "3448124",
+        cuentaId: "52504333",
+        fondoId: "10",
+        inversionId: "1",
+        porcentaje: "100",
+        estado: "ACTIVO",
+        fechaSolicitud: "2024-12-20",
+        origen: "Por defecto",
+        fechaActivacion: "2024-12-20",
+        oficina: "null",
+        numeroRadicado: null,
+        fechaCreacion: "2024-12-20",
+        usuarioCreacion: "dsetldatastage",
+        fechaModificacion: "null",
+        usuarioModificacion: null,
+      },
+    ],
+  },
+};

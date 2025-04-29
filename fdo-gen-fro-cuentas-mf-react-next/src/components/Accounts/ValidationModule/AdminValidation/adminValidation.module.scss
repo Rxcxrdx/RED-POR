@@ -1,0 +1,22 @@
+.adminValidationContainer {
+  background-color: white;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.creationFormContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filterFormContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}

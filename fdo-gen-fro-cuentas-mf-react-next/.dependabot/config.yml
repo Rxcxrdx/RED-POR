@@ -1,0 +1,22 @@
+version: 1
+
+# Check your config file using our online tool: https://dependabot.com/docs/config-file/validator/
+update_configs:
+
+  # Package manager to use. Check supported package managers: https://dependabot.com/docs/config-file/
+  - package_manager: ""
+
+    # Where to look for package manifests. Remember the directory is relative to the repository's root.
+    directory: "/"
+
+    # How often to check for non-security updates and when to create pull requests.
+    # Check the available schedules: https://dependabot.com/docs/config-file/
+    update_schedule: "weekly"
+
+    # Branch to create pull requests against.
+    target_branch: "master"
+
+    # Preferences for the format of Dependabot's commit messages and pull request titles.
+    # Check our Gitmoji site: https://gitmoji.carloscuesta.me/
+    commit_message:
+      prefix: ":arrow_up:"
